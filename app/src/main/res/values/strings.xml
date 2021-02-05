@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">My Application</string>
+
+    <string name="nombre_paciente">Nombre paciente</string>
+    <string name="turnos">Turnos:</string>
+    <string name="telefono">Teléfono</string>
+    <string name="instagram">Instagram</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="esta_pago">Está pago?</string>
+
+    <string name="modificar_turno_button">Modificar turno</string>
+    <string name="eliminar_turno">Eliminar turno</string>
+
+    <string name="turnos_main_activity">Turnos</string>
+
+    <!-- IMGs -->
+    <string name="img_telefono">Imagen teléfono</string>
+    <string name="img_instagram">Imagen instagram</string>
+    <string name="img_persona">Imagen persona</string>
+    <string name="img_sesion">Imagen sesión</string>
+    <string name="img_esta_pago">Imagen está pago?></string>
+    <string name="img_calendario">Imagen calendario</string>
+    <string name="img_reloj">Imagen reloj</string>
+
+    <!-- TITLES -->
+    <string name="seleccionar_paciente">Seleccionar paciente</string>
+    <string name="nuevo_paciente">Nuevo paciente</string>
+    <string name="modificar_paciente">Modificar paciente</string>
+    <string name="ver_paciente">Ver paciente</string>
+    <string name="nuevo_turno">Nuevo turno</string>
+    <string name="turnos_del_dia">Turnos del día</string>
+    <string name="modificar_turno">Modificar turno</string>
+
+    <!-- HINTS -->
+    <string name="hint_nombre">Nombre(*)</string>
+    <string name="hint_fecha">Fecha(*)</string>
+    <string name="hint_hora">Hora(*)</string>
+
+</resources>

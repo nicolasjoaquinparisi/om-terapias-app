@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplication">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="OM Terapias"
+        android:roundIcon="@drawable/ic_om"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".activities.ModificarPacienteActivity" />
+        <activity android:name=".activities.VerTurnosDelDiaActivity" />
+        <activity android:name=".activities.VerPacienteActivity" />
+        <activity android:name=".activities.BuscarPacienteActivity" />
+        <activity android:name=".activities.NuevoTurnoActivity" />
+        <activity android:name=".activities.NuevoPacienteActivity" />
+        <activity android:name=".activities.EliminarTurnosActivity"/>
+        <activity android:name=".activities.ModificarTurnosActivity"/>
+        <activity android:name=".activities.ModificarTurnoActivity"/>
+        <activity android:name=".activities.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.EliminarTurnosActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!---Nuevo paciente-->
+
+        <TextView
+            android:id="@+id/textViewNombrePaciente"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:gravity="center"
+            android:text="@string/nombre_paciente"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!---Nombre-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="11dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="60dp"
+                    android:layout_height="55dp"
+                    android:layout_weight="0"
+                    android:contentDescription="@string/img_telefono"
+                    app:srcCompat="@drawable/ic_phone" />
+
+                <Space
+                    android:layout_width="11dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0" />
+
+                <TextView
+                    android:id="@+id/textViewTelefonoPaciente"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:gravity="bottom"
+                    android:text="@string/telefono"
+                    android:textSize="24sp" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="11dp"
+                    android:layout_height="match_parent" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="60dp"
+                    android:layout_height="55dp"
+                    android:layout_weight="0"
+                    android:contentDescription="@string/img_instagram"
+                    app:srcCompat="@drawable/ic_instagram" />
+
+                <Space
+                    android:layout_width="11dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0" />
+
+                <TextView
+                    android:id="@+id/textViewInstagramPaciente"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_weight="1.5"
+                    android:gravity="bottom"
+                    android:text="@string/instagram"
+                    android:textSize="18sp" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <!---Telefono-->
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="10sp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/turnos"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20sp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="361dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Space
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:id="@+id/imageViewTurno1"
+                        android:layout_width="75dp"
+                        android:layout_height="match_parent"
+                        android:visibility="visible"
+                        android:contentDescription="@string/img_sesion"
+                        app:srcCompat="@drawable/ic_om" />
+
+                    <Space
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/textViewInformacionPacienteTurno1"
+                        android:layout_width="180dp"
+                        android:layout_height="match_parent"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/buttonEliminarTurno1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="OnButtonEliminarTurnoClick"
+                        android:text="@string/eliminar_turno"
+                        android:textSize="12sp" />
+
+                    <Space
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Space
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:id="@+id/imageViewTurno2"
+                        android:layout_width="75dp"
+                        android:layout_height="match_parent"
+                        android:visibility="visible"
+                        android:contentDescription="@string/img_sesion"
+                        app:srcCompat="@drawable/ic_om" />
+
+                    <Space
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/textViewInformacionPacienteTurno2"
+                        android:layout_width="180dp"
+                        android:layout_height="match_parent"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/buttonEliminarTurno2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="OnButtonEliminarTurnoClick"
+                        android:text="@string/eliminar_turno"
+                        android:textSize="12sp" />
+
+                    <Space
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Space
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:id="@+id/imageViewTurno3"
+                        android:layout_width="75dp"
+                        android:layout_height="match_parent"
+                        android:visibility="visible"
+                        android:contentDescription="@string/img_sesion"
+                        app:srcCompat="@drawable/ic_om" />
+
+                    <Space
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/textViewInformacionPacienteTurno3"
+                        android:layout_width="180dp"
+                        android:layout_height="match_parent"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/buttonEliminarTurno3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="OnButtonEliminarTurnoClick"
+                        android:text="@string/eliminar_turno"
+                        android:textSize="12sp" />
+
+                    <Space
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Space
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:id="@+id/imageViewTurno4"
+                        android:layout_width="75dp"
+                        android:layout_height="match_parent"
+                        android:visibility="visible"
+                        android:contentDescription="@string/img_sesion"
+                        app:srcCompat="@drawable/ic_om" />
+
+                    <Space
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/textViewInformacionPacienteTurno4"
+                        android:layout_width="180dp"
+                        android:layout_height="match_parent"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/buttonEliminarTurno4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="OnButtonEliminarTurnoClick"
+                        android:text="@string/eliminar_turno"
+                        android:textSize="12sp" />
+
+                    <Space
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Space
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:id="@+id/imageViewTurno5"
+                        android:layout_width="75dp"
+                        android:layout_height="match_parent"
+                        android:visibility="visible"
+                        android:contentDescription="@string/img_sesion"
+                        app:srcCompat="@drawable/ic_om" />
+
+                    <Space
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/textViewInformacionPacienteTurno5"
+                        android:layout_width="180dp"
+                        android:layout_height="match_parent"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/buttonEliminarTurno5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="OnButtonEliminarTurnoClick"
+                        android:text="@string/eliminar_turno"
+                        android:textSize="12sp" />
+
+                    <Space
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Space
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:id="@+id/imageViewTurno6"
+                        android:layout_width="75dp"
+                        android:layout_height="match_parent"
+                        android:visibility="visible"
+                        android:contentDescription="@string/img_sesion"
+                        app:srcCompat="@drawable/ic_om" />
+
+                    <Space
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/textViewInformacionPacienteTurno6"
+                        android:layout_width="180dp"
+                        android:layout_height="match_parent"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/buttonEliminarTurno6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="OnButtonEliminarTurnoClick"
+                        android:text="@string/eliminar_turno"
+                        android:textSize="12sp" />
+
+                    <Space
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Space
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:id="@+id/imageViewTurno7"
+                        android:layout_width="75dp"
+                        android:layout_height="match_parent"
+                        android:visibility="visible"
+                        android:contentDescription="@string/img_sesion"
+                        app:srcCompat="@drawable/ic_om" />
+
+                    <Space
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/textViewInformacionPacienteTurno7"
+                        android:layout_width="180dp"
+                        android:layout_height="match_parent"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/buttonEliminarTurno7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="OnButtonEliminarTurnoClick"
+                        android:text="@string/eliminar_turno"
+                        android:textSize="12sp" />
+
+                    <Space
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Space
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:id="@+id/imageViewTurno8"
+                        android:layout_width="75dp"
+                        android:layout_height="match_parent"
+                        android:visibility="visible"
+                        android:contentDescription="@string/img_sesion"
+                        app:srcCompat="@drawable/ic_om" />
+
+                    <Space
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/textViewInformacionPacienteTurno8"
+                        android:layout_width="180dp"
+                        android:layout_height="match_parent"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/buttonEliminarTurno8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="OnButtonEliminarTurnoClick"
+                        android:text="@string/eliminar_turno"
+                        android:textSize="12sp" />
+
+                    <Space
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0" />
+
+            <Button
+                android:id="@+id/buttonCancelar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="OnButtonCancelarClick"
+                android:text="@string/cancelar" />
+
+            <Space
+                android:layout_width="15dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.02" />
+
+        <!---Telefono-->
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+    <item
+        android:id="@+id/paciente"
+        android:title="Paciente">
+
+        <menu
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            <item
+                android:id="@+id/agregarPaciente"
+                android:onClick="onClickNuevoPaciente"
+                android:title="Nuevo"></item>
+            <item
+                android:id="@+id/modificarPaciente"
+                android:title="Modificar"
+                android:onClick="onClickModificarPaciente">
+            </item>
+            <item
+                android:id="@+id/verPaciente"
+                android:title="Ver"
+                android:onClick="onClickVerPaciente">
+            </item>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/turno"
+        android:title="Turno">
+
+        <menu
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            <item
+                android:id="@+id/agregarTurno"
+                android:onClick="onClickNuevoTurno"
+                android:title="Nuevo">
+
+            </item>
+
+            <item
+                android:id="@+id/modificarTurno"
+                android:onClick="onClickModificarTurno"
+                android:title="Modificar">
+            </item>
+
+            <item
+                android:id="@+id/eliminarTurno"
+                android:onClick="onClickEliminarTurno"
+                android:title="Eliminar">
+            </item>
+        </menu>
+    </item>
+</menu>

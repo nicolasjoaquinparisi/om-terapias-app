@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.VerPacienteActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!---Nuevo paciente-->
+
+        <TextView
+            android:id="@+id/textViewNombrePaciente"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:gravity="center"
+            android:text="@string/ver_paciente"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!---Nombre-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="11dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="60dp"
+                    android:layout_height="55dp"
+                    android:layout_weight="0"
+                    android:contentDescription="@string/img_telefono"
+                    app:srcCompat="@drawable/ic_phone" />
+
+                <Space
+                    android:layout_width="11dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0" />
+
+                <TextView
+                    android:id="@+id/textViewTelefonoPaciente"
+                    android:layout_width="182dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:gravity="bottom"
+                    android:text="@string/telefono"
+                    android:textSize="24sp" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="11dp"
+                    android:layout_height="match_parent" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="60dp"
+                    android:layout_height="55dp"
+                    android:layout_weight="0"
+                    android:contentDescription="@string/img_instagram"
+                    app:srcCompat="@drawable/ic_instagram" />
+
+                <Space
+                    android:layout_width="11dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0" />
+
+                <TextView
+                    android:id="@+id/textViewInstagramPaciente"
+                    android:layout_width="182dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1.5"
+                    android:gravity="bottom"
+                    android:text="@string/instagram"
+                    android:textSize="24sp" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <!---Telefono-->
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="10sp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Turnos:"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20sp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="361dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Space
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:id="@+id/imageViewVerPacienteTurno1"
+                        android:layout_width="75dp"
+                        android:layout_height="match_parent"
+                        android:contentDescription="@string/img_sesion"
+                        android:visibility="visible"
+                        app:srcCompat="@drawable/ic_om" />
+
+                    <Space
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/textViewInformacionPacienteTurno1"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:textSize="22sp" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Space
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:id="@+id/imageViewVerPacienteTurno2"
+                        android:layout_width="75dp"
+                        android:layout_height="match_parent"
+                        android:contentDescription="@string/img_sesion"
+                        android:visibility="visible"
+                        app:srcCompat="@drawable/ic_om" />
+
+                    <Space
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/textViewInformacionPacienteTurno2"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:textSize="22sp" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Space
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:id="@+id/imageViewVerPacienteTurno3"
+                        android:layout_width="75dp"
+                        android:layout_height="match_parent"
+                        android:contentDescription="@string/img_sesion"
+                        android:visibility="visible"
+                        app:srcCompat="@drawable/ic_om" />
+
+                    <Space
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/textViewInformacionPacienteTurno3"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:textSize="22sp" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Space
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:id="@+id/imageViewVerPacienteTurno4"
+                        android:layout_width="75dp"
+                        android:layout_height="match_parent"
+                        android:contentDescription="@string/img_sesion"
+                        android:visibility="visible"
+                        app:srcCompat="@drawable/ic_om" />
+
+                    <Space
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/textViewInformacionPacienteTurno4"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:textSize="22sp" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Space
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:id="@+id/imageViewVerPacienteTurno5"
+                        android:layout_width="75dp"
+                        android:layout_height="match_parent"
+                        android:contentDescription="@string/img_sesion"
+                        android:visibility="visible"
+                        app:srcCompat="@drawable/ic_om" />
+
+                    <Space
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/textViewInformacionPacienteTurno5"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:textSize="22sp" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Space
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:id="@+id/imageViewVerPacienteTurno6"
+                        android:layout_width="75dp"
+                        android:layout_height="match_parent"
+                        android:contentDescription="@string/img_sesion"
+                        android:visibility="visible"
+                        app:srcCompat="@drawable/ic_om" />
+
+                    <Space
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/textViewInformacionPacienteTurno6"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:textSize="22sp" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Space
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:id="@+id/imageViewVerPacienteTurno7"
+                        android:layout_width="75dp"
+                        android:layout_height="match_parent"
+                        android:contentDescription="@string/img_sesion"
+                        android:visibility="visible"
+                        app:srcCompat="@drawable/ic_om" />
+
+                    <Space
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/textViewInformacionPacienteTurno7"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:textSize="22sp" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Space
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:id="@+id/imageViewVerPacienteTurno8"
+                        android:layout_width="75dp"
+                        android:layout_height="match_parent"
+                        android:contentDescription="@string/img_sesion"
+                        android:visibility="visible"
+                        app:srcCompat="@drawable/ic_om" />
+
+                    <Space
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/textViewInformacionPacienteTurno8"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:textSize="22sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="11dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0" />
+
+            <Button
+                android:id="@+id/buttonCancelar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="OnButtonCancelarClick"
+                android:text="@string/cancelar" />
+
+            <Space
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/buttonAceptar"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="167dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="OnButtonAceptarClick"
+                android:text="@string/aceptar" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.02" />
+
+        <!---Telefono-->
+
+    </LinearLayout>
+</LinearLayout>

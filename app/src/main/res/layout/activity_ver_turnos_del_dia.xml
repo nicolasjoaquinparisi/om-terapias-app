@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.VerTurnosDelDiaActivity">
+
+    <TextView
+        android:id="@+id/textViewTurnosDelDia"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:text="@string/turnos_del_dia"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="450dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="75dp"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/img_sesion"
+                    android:visibility="visible"
+                    app:srcCompat="@drawable/ic_om" />
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/textViewInformacionTurno1"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="75dp"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/img_sesion"
+                    app:srcCompat="@drawable/ic_reiki" />
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/textViewInformacionTurno2"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="75dp"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/img_sesion"
+                    app:srcCompat="@drawable/ic_om" />
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/textViewInformacionTurno3"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/imageView11"
+                    android:layout_width="75dp"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/img_sesion"
+                    app:srcCompat="@drawable/ic_om" />
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/textViewInformacionTurno4"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/imageView12"
+                    android:layout_width="75dp"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/img_sesion"
+                    app:srcCompat="@drawable/ic_om" />
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/textViewInformacionTurno5"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/imageView14"
+                    android:layout_width="75dp"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/img_sesion"
+                    app:srcCompat="@drawable/ic_om" />
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/textViewInformacionTurno6"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/imageView15"
+                    android:layout_width="75dp"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/img_sesion"
+                    app:srcCompat="@drawable/ic_om" />
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/textViewInformacionTurno7"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/imageView16"
+                    android:layout_width="75dp"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/img_sesion"
+                    app:srcCompat="@drawable/ic_om" />
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/textViewInformacionTurno8"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

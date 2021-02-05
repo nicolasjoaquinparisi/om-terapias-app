@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.NuevoPacienteActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!---Nuevo paciente-->
+
+        <TextView
+            android:id="@+id/textViewNombrePacienteModificar"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:gravity="center"
+            android:text="@string/modificar_paciente"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!---Nombre-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="11dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+                    android:contentDescription="@string/img_persona"
+                    app:srcCompat="@drawable/ic_perm_identity_24px" />
+
+                <Space
+                    android:layout_width="11dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0" />
+
+                <EditText
+                    android:id="@+id/editTextNombreModificar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:layout_weight="1.5"
+                    android:ems="10"
+                    android:hint="@string/hint_nombre"
+                    android:inputType="textPersonName" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="11dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="60dp"
+                    android:layout_height="55dp"
+                    android:layout_weight="0"
+                    android:contentDescription="@string/img_telefono"
+                    app:srcCompat="@drawable/ic_phone" />
+
+                <Space
+                    android:layout_width="11dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0" />
+
+                <EditText
+                    android:id="@+id/editTextTelefonoModificar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:ems="10"
+                    android:hint="@string/telefono"
+                    android:inputType="textPersonName" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="11dp"
+                    android:layout_height="match_parent" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="60dp"
+                    android:layout_height="55dp"
+                    android:layout_weight="0"
+                    android:contentDescription="@string/img_instagram"
+                    app:srcCompat="@drawable/ic_instagram" />
+
+                <Space
+                    android:layout_width="11dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0" />
+
+                <EditText
+                    android:id="@+id/editTextInstagramModificar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:ems="10"
+                    android:hint="@string/instagram"
+                    android:inputType="textPersonName" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <!---Telefono-->
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="11dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0" />
+
+            <Button
+                android:id="@+id/buttonCancelar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="OnButtonCancelarClick"
+                android:text="@string/cancelar" />
+
+            <Space
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/buttonAceptar"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="167dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="OnButtonAceptarClick"
+                android:text="@string/aceptar" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.02" />
+
+        <!---Telefono-->
+
+    </LinearLayout>
+</LinearLayout>
